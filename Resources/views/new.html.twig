@@ -1,0 +1,18 @@
+{% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
+
+{% block form_static %}
+    <div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
+        {{ form_start(form) }}
+            {{ form_widget(form.content) }}
+            {{ form_rest(form) }}
+        {{ form_end(form) }}
+    </div>
+
+    <script type="text/javascript">
+    $vic(document).on('victoire_widget_form_create_presubmit victoire_widget_form_update_presubmit', function(event) {
+        for ( instance in CKEDITOR.instances ) {
+            CKEDITOR.instances[instance].updateElement();
+        }
+    });
+    </script>
+{% endblock form_static %}

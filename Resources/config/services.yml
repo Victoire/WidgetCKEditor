@@ -1,0 +1,13 @@
+services:
+    victoire_core.widget_ckeditor_content_resolver:
+        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: CKEditor }
+    #alias to the entity
+    victoire.widget.ckeditor:
+        class: Victoire\Widget\CKEditorBundle\Entity\WidgetCKEditor
+    #alias to the form
+    victoire.widget.form.ckeditor:
+        class: Victoire\Widget\CKEditorBundle\Form\WidgetCKEditorType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_ckeditor}

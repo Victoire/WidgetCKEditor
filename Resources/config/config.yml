@@ -1,0 +1,12 @@
+victoire_core:
+    widgets:
+        CKEditor:
+            class: "Victoire\Widget\CKEditorBundle\Entity\WidgetCKEditor"
+            name: CKEditor
+            parent: Text
+
+jms_translation:
+   configs:
+        victoire_ckeditor_bundle:
+            dirs: ["@VictoireWidgetCKEditorBundle"]
+            output_dir: "@VictoireWidgetCKEditorBundle/Resources/translations"

@@ -1,0 +1,27 @@
+{
+    "name": "victoire/ckeditor-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire Cms CKEditor component",
+    "keywords": ["cms", "victoire", "ckeditor"],
+    "homepage": "http://appventus.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Andrieux",
+            "email": "paul@appventus.com"
+        }
+    ],
+    "require": {
+        "php"                      : ">=5.3.3",
+        "symfony/framework-bundle" : "~2.3",
+        "egeloen/ckeditor-bundle"  : "2.5.*@dev",
+        "victoire/victoire"        : ">=0.1.4"
+    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\CKEditorBundle": "" }
+    },
+    "minimum-stability": "dev",
+
+
+    "target-dir": "Victoire/Widget/CKEditorBundle"
+}
