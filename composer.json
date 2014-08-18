@@ -1,14 +1,14 @@
 {
     "name": "victoire/ckeditor-widget",
     "type": "symfony-bundle",
-    "description": "Victoire Cms CKEditor component",
+    "description": "Victoire Cms CKEditor widget",
     "keywords": ["cms", "victoire", "ckeditor"],
     "homepage": "http://appventus.com",
     "license": "MIT",
     "authors": [
         {
-            "name": "Paul Andrieux",
-            "email": "paul@appventus.com"
+            "name": "Leny Bernard",
+            "email": "leny@appventus.com"
         }
     ],
     "require": {
