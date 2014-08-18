@@ -9,7 +9,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.uiColor = '#AADC6E';
     config.skin = 'moono-dark';
     config.toolbar = 'MyToolbar';
-    config.font_names = 'Arial;FrutigerLTStd65Bold;FrutigerLTStd45Light;FrutigerLTStd55Roman;Tahoma;Verdana';
+    config.font_names = 'Arial;Tahoma;Verdana';
 
     config.toolbar_MyToolbar =
     [
