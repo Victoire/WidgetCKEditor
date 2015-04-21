@@ -1,5 +1,5 @@
 {
-    "name": "appventus/ckeditor-widget",
+    "name": "friendsofvictoire/ckeditor-widget",
     "type": "symfony-bundle",
     "description": "Victoire Cms CKEditor widget",
     "keywords": ["cms", "victoire", "ckeditor"],
