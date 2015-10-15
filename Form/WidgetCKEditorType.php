@@ -7,18 +7,19 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 /**
- * WidgetCKEditor form type
+ * WidgetCKEditor form type.
  */
 class WidgetCKEditorType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
      * @param array                $options
      *
-     * @return void
-     *
      * @throws \Exception
+     *
+     * @return void
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -27,7 +28,7 @@ class WidgetCKEditorType extends WidgetType
         if ($options['businessEntityId'] === null) {
             //if no entity is given, we generate the static form
             $builder
-                ->add('content', 'ckeditor', array(
+                ->add('content', 'ckeditor', [
                     //     'config' => array(
                     //         'toolbar' => array(
                     //             array(
@@ -42,31 +43,32 @@ class WidgetCKEditorType extends WidgetType
                     //         ),
                     //         'uiColor' => '#ffffff'
                     //     ),
-                    )
+                    ]
                 );
         }
 
         parent::buildForm($builder, $options);
-
     }
 
     /**
-     * bind form to WidgetCKEditor entity
+     * bind form to WidgetCKEditor entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\CKEditorBundle\Entity\WidgetCKEditor',
             'widget'             => 'CKEditor',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
+     *
      * @return string type
      */
     public function getName()
