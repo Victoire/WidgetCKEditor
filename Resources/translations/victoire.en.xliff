@@ -14,6 +14,10 @@
         <source>modal.form.widget.type.ckeditor.label</source>
         <target state="new">Rich text</target>
       </trans-unit>
+      <trans-unit resname="widget_ckeditor.form.content.label">
+        <source>widget_ckeditor.form.content.label</source>
+        <target state="new">Field selection</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
