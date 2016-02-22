@@ -2,8 +2,9 @@
 
 namespace Victoire\Widget\CKEditorBundle\Form;
 
+use Ivory\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 /**
@@ -27,52 +28,23 @@ class WidgetCKEditorType extends WidgetType
         //choose form mode
         if ($options['businessEntityId'] === null) {
             //if no entity is given, we generate the static form
-            $builder
-                ->add('content', 'ckeditor', [
-                    //     'config' => array(
-                    //         'toolbar' => array(
-                    //             array(
-                    //                 'name'  => 'document',
-                    //                 'items' => array('Source', '-', 'Save', 'NewPage', 'DocProps', 'Preview', 'Print', '-', 'Templates'),
-                    //             ),
-                    //             '/',
-                    //             array(
-                    //                 'name'  => 'basicstyles',
-                    //                 'items' => array('Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat'),
-                    //             ),
-                    //         ),
-                    //         'uiColor' => '#ffffff'
-                    //     ),
-                    ]
-                );
+            $builder->add('content', CKEditorType::class);
         }
 
         parent::buildForm($builder, $options);
     }
 
     /**
-     * bind form to WidgetCKEditor entity.
-     *
-     * @param OptionsResolverInterface $resolver
+     * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\CKEditorBundle\Entity\WidgetCKEditor',
             'widget'             => 'CKEditor',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string type
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_ckeditor';
     }
 }
