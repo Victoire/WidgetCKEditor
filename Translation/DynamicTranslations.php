@@ -5,9 +5,6 @@ namespace Victoire\Widget\CKEditorBundle\Translation;
 use JMS\TranslationBundle\Model\Message;
 use JMS\TranslationBundle\Translation\TranslationContainerInterface;
 
-/**
- *
- */
 class DynamicTranslations implements TranslationContainerInterface
 {
     /**
