@@ -32,3 +32,9 @@ Do not forget to add the bundle in your AppKernel !
             return $bundles;
         }
     }
+
+## Front dependencies
+
+### CKEditor
+
+CKEditor is loaded by ivory/ckeditor-bundle
