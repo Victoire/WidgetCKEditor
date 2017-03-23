@@ -1,4 +1,4 @@
-Victoire DCMS CKEditor Bundle
+Victoire CKEditor Bundle
 ============
 
 ## What is the purpose of this bundle
