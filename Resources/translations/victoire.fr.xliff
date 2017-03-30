@@ -6,15 +6,15 @@
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
     </header>
     <body>
-      <trans-unit resname="widget.ckeditor.new.action.label">
+      <trans-unit resname="widget.ckeditor.new.action.label" id="58dcf1c4c6d92">
         <source>widget.ckeditor.new.action.label</source>
         <target state="new">Texte riche</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.ckeditor.label">
+      <trans-unit resname="modal.form.widget.type.ckeditor.label" id="58dcf1c4c6dac">
         <source>modal.form.widget.type.ckeditor.label</source>
         <target state="new">Texte riche</target>
       </trans-unit>
-      <trans-unit resname="widget_ckeditor.form.content.label">
+      <trans-unit resname="widget_ckeditor.form.content.label" id="58dcf1c4c6dc5">
         <source>widget_ckeditor.form.content.label</source>
         <target state="new">Sélection du champ</target>
       </trans-unit>
