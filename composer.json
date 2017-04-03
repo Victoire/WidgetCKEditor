@@ -16,7 +16,7 @@
     ],
     "require": {
         "egeloen/ckeditor-bundle" : "~4.0.1",
-        "victoire/victoire": "~2.3"
+        "victoire/victoire": "~2.3 | ~3.0"
     },
     "autoload": {
         "psr-0": {
