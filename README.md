@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/Victoire/WidgetCKEditor.svg?style=shield)](https://circleci.com/gh/Victoire/WidgetCKEditor)
+
 Victoire CKEditor Bundle
 ============
 
