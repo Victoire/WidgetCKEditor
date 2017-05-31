@@ -29,6 +29,7 @@ Do not forget to add the bundle in your AppKernel !
             $bundles = array(
                 ...
                 new Victoire\Widget\CKEditorBundle\VictoireWidgetCKEditorBundle(),
+                new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             );
 
             return $bundles;
