@@ -1,7 +1,7 @@
 victoire_core:
     widgets:
         CKEditor:
-            class: "Victoire\Widget\CKEditorBundle\Entity\WidgetCKEditor"
+            class: Victoire\Widget\CKEditorBundle\Entity\WidgetCKEditor
             name: CKEditor
             parent: Text
 
